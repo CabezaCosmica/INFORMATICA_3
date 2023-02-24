@@ -1,0 +1,12 @@
+24-02-2023
+----TIPOS DE DATOS----
+
+String: "" "Hola mundo" '123456'
+Enteros: -999999999 o 10000000
+Flotantes: 100.09    -36.99   0.0
+Booleanos: True False
+
+Listas:        []
+Tuplas:        ()
+Diccionarios:  {}
+Conjuntos:     {}
