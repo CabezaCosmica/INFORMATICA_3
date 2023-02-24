@@ -12,6 +12,9 @@ Diccionarios:  {}   {"hola": "hello", "mundo": "world"}
 Conjuntos:     {}   {"A", "B", "C", "D"}
 
 --------OPERADORES----------
+
+Asignacion:   
+
 Aritmeticos:  +, -, *
               1/5 ==> 0.2      division
               1//5 ==> 0       division entera
@@ -29,3 +32,6 @@ Comparativos: "hola" == "hola "   ==> False
               3 >=   3            ==> True
               -10 <  0            ==> True
               -10 <= 10           ==> False
+
+Pertenencia:  1 in [1,2,3]        ==> True
+              1 not [1,2,3]       ==> False
