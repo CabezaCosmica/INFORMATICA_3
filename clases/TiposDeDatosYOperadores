@@ -6,7 +6,9 @@ Enteros: -999999999 o 10000000
 Flotantes: 100.09    -36.99   0.0
 Booleanos: True False
 
-Listas:        []
-Tuplas:        ()
-Diccionarios:  {}
-Conjuntos:     {}
+Listas:        []   [0, 1, 2]  ["uno", "dos", "tres"]
+Tuplas:        ()   (0, 1, 2)  ("uno", "dos", "tres")
+Diccionarios:  {}   {"hola": "hello", "mundo": "world"}
+Conjuntos:     {}   {"A", "B", "C", "D"}
+
+-----DATOS----------
