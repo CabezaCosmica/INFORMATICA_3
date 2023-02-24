@@ -44,6 +44,17 @@ print(distancia)
 con porcentajes de 15%, 25%, 20% y 40%. Si un estudiante tiene las primeras 3 calificaciones definidas.
 Realice un algoritmo que calcule la nota necesaria de la última nota para pasar la materia. """
 
+nota1 = float(input("Ingrese su primera nota: "))
+nota2 = float(input("Ingrese su segunda nota: "))
+nota3 = float(input("Ingrese su tercera nota: "))
+
+promedio = (nota1 * 0.15) + (nota2 * 0.25) + (nota3 * 0.20)
+
+if promedio >= 3:
+    print("La materia ya está aprobada, con un promedio de ", promedio)
+else:
+    nota4 = (3 - promedio)/0.40
+    print("Para aprobar la materia, necesitas sacar en el 4to parcial una nota de ", nota4)
 
 """ Dos automoviles realizan una carrera. El primero de ellos acelera a razón constante de 3m/s², el segundo 
 a razón de 5m/s². Si el segundo de ellos empieza su recorrido 10 segundos después que el primero ha empezado.
