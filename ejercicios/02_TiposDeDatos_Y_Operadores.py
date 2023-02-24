@@ -19,11 +19,25 @@ print(a, b)
 c = (1, 4)
 d = (2, 3)
 print(c, d)
+e = {"Lunes": "Monday"}
+print(e)
+f = {"A", "E", "I", "O", "U"}
+print(f)
 
 "2) Resolver con los operadores que considere conveniente"
 
 """ Dadas las coordenadas P1(5,4,5) y P2(0,10,9).
 Realice un codigo que determine la distancia entre ambos puntos """
+
+import math
+
+def distancia_entre_puntos(x1, y1, z1, x2, y2, z2):
+    distancia = math.sqrt((x2-x1)**2 + (y2-y1)**2 + (z2-z1)**2)
+    return distancia
+
+distancia = distancia_entre_puntos(5, 4, 5, 0, 10, 9)
+print(distancia)
+
 
 
 """ La calificación de informatica se encuentra en el intervalo [0,5] y se calcula tomando 4 notas, 
