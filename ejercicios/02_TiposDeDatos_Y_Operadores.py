@@ -11,6 +11,14 @@
 '''
 print(4, 8)
 print(0.8, 0.6)
+print("Corozo", "3.1416")
+print(2>5, "fifi" == "fifi")
+a = [1, 3, 5, 7]
+b = [2, 4, 6, 8]
+print(a, b)
+c = (1, 4)
+d = (2, 3)
+print(c, d)
 
 "2) Resolver con los operadores que considere conveniente"
 
