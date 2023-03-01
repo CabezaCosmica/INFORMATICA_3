@@ -60,6 +60,17 @@ else:
 a razón de 5m/s². Si el segundo de ellos empieza su recorrido 10 segundos después que el primero ha empezado.
 ¿Cuanto tiempo habrá transcurrido cuando ambos se encuentran? """
 
+v1 = 0
+a1 = 3
+v2 = 0
+a2 = 5
+t = 10
+d1 = v1*t + 0.5*a1*t**2
+d2 = v2*(t-10)+0.5*a2*(t-10)**2
+dtotal = d1-d2
+tencuentro = (2*dtotal/(a1 + a2))**0.5
+ttotal = t+tencuentro
+print("Los 2 automóviles se encontraran después de ", ttotal, " s")
 
 """ Cuatro compañeros, contratan un taxi con el objeto de movilizarse juntos a la universidad. 
 El contrato es de lunes a viernes, y deben pagar al taxista $15000 por cada trayecto. El servicio se
@@ -74,3 +85,50 @@ CAMILA        Si        Si        No        No    No
 JOSE          Si        No        Si        No    No
 MARIA         Si        Si        Si        No    No      
 ¿Cuanto debe pagar cada estudiante? """
+
+uso_servicio = [[True, True, False, True, False],
+                [True, True, False, False, False],
+                [True, False, True, False, False],
+                [True, True, True, False, False]]
+
+tarifa_sin_uso = 10000
+tarifa_con_uso = 15000
+
+costo_juan = 0
+costo_camila = 0
+costo_jose = 0
+costo_maria = 0
+
+for dia in range(5):
+    num_usuarios = 0
+    if uso_servicio[0][dia]:
+        num_usuarios += 1
+    if uso_servicio[1][dia]:
+        num_usuarios += 1
+    if uso_servicio[2][dia]:
+        num_usuarios += 1
+    if uso_servicio[3][dia]:
+        num_usuarios += 1
+    
+    if num_usuarios == 0:
+        costo_juan += tarifa_sin_uso / 4
+        costo_camila += tarifa_sin_uso / 4
+        costo_jose += tarifa_sin_uso / 4
+        costo_maria += tarifa_sin_uso / 4
+    else:
+        costo_por_usuario = tarifa_con_uso / num_usuarios
+        if uso_servicio[0][dia]:
+            costo_juan += costo_por_usuario
+        if uso_servicio[1][dia]:
+            costo_camila += costo_por_usuario
+        if uso_servicio[2][dia]:
+            costo_jose += costo_por_usuario
+        if uso_servicio[3][dia]:
+            costo_maria += costo_por_usuario
+
+print("Costo total para Juan: $", costo_juan)
+print("Costo total para Camila: $", costo_camila)
+print("Costo total para Jose: $", costo_jose)
+print("Costo total para Maria: $", costo_maria)
+
+
